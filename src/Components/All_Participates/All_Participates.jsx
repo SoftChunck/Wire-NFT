@@ -2,7 +2,7 @@ import React from "react";
 import './All_Participates.css'
 const All_Participates = (props) => {
     return ( 
-        <div className="All_Participates bg-color row p-0  br-1">
+        <div className="All_Participates bg-color row p-0 m-0 br-1">
             <div className=" p-3 row">
                 <p className="p-color">All Participates</p>
                 <h1 className="h3 h-color">{props.data.participates_count}</h1>

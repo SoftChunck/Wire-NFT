@@ -2,7 +2,7 @@ import React from "react";
 import './All_Income.css'
 const All_Income = (props) => {
     return ( 
-        <div className="All_Income bg-color row p-0  br-1">
+        <div className="All_Income bg-color row p-0 m-0 br-1">
             <div className=" p-3 row">
                 <p className="h-color h4">All Incomes</p>
                 <div className="d-flex flex-row justify-content-between mt-4">

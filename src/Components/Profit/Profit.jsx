@@ -3,23 +3,23 @@ import './Profit.css'
 import Chart from 'react-apexcharts'
 const Profit = (props) => {
     return (
-        <div className="bg-color br-1 text-white px-0 py-3 row">
+        <div className="bg-color br-1 text-white px-0 m-0 py-3 row">
             <div className="col-lg-6">
-                <Chart
+                <Chart               
                     options={props.opt.options}
-                    series={[70]}
+                    series={[300]}
                     type="radialBar"
-                    height={'300'}
+                    height={'300'}    
                 />       
             </div>
             <div className="col-lg-6">
                 <Chart
                     options={props.opt.options}
-                    series={[80]}
+                    series={[((props.data.earned/props.data.earned_outof)*300).toFixed(0)]}
                     type="radialBar"
                     height={'300'}
                 />                
-                <p className="p-color text-center">Your total earning is 14200.25 USD out of 150000 USD (Your earned 9.4668% out of 300% of your investment )</p>
+                <p className="p-color text-center">Your total earning is {props.data.earned} USD out of {props.data.earned_outof} USD (Your earned {((props.data.earned/props.data.earned_outof)*300).toFixed(3)} out of 300% of your investment )</p>
             </div>
 
                 

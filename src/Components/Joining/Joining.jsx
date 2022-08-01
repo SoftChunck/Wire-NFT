@@ -3,7 +3,7 @@ import './Joining.css';
 import Chart from 'react-apexcharts'
 const Joining = (props) => {
     return ( 
-        <div className="Joining bg-color row p-0 br-1">
+        <div className="Joining bg-color row p-0 m-0 br-1">
             <div className="p-3">
                 <p className="p-color">Joining</p>
                 <h1 className="h3 h-color">{props.data.joined}</h1>

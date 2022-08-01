@@ -2,7 +2,7 @@ import React from "react";
 import './Earned_USD.css'
 const Earned_USD = (props) => {
     return ( 
-        <div className="Earned_USD bg-color p-0  br-1">
+        <div className="Earned_USD bg-color p-0 mt-3 br-1">
             <div className=" p-3 row">
                 <p className="p-color">Participates have earned USD</p>
                 <h1 className="h-color h3">{props.data.earned_usd}USD</h1>

@@ -1,11 +1,6 @@
 import React from 'react';
 import { useState } from 'react';
-import { All_Participates, Joining, Total_Earning } from '../../Components';
-import All_Income from '../../Components/All_Income/All_Income';
-import Earned_USD from '../../Components/Earned_USD/Earned_USD';
-import Earned_Wire from '../../Components/Earned_Wire/Earned_Wire';
-import Id_Number from '../../Components/Id_Number/Id_Number';
-import Profit from '../../Components/Profit/Profit';
+import { All_Participates, Joining, Total_Earning,All_Income,Earned_Wire,Earned_USD,Id_Number,Profit} from '../../Components';
 import './Dashboard.css'
 const Dashboard = () => {
     let [joining,setjoining] = new useState({        
@@ -323,13 +318,13 @@ const Dashboard = () => {
           },                        
             dataLabels: {
               name: {
+                show: false
+              },
+              value: {
                 offsetY: 10,
                 color: "#fff",
                 fontSize: "2.5rem"
-              },
-              value: {
-                show: false
-              }
+              }              
             }
           }
         },
@@ -366,12 +361,9 @@ const Dashboard = () => {
                   <All_Income data={{referral_income:'123',total_referral_income:'23',matching_income:'123',total_matching_income:'100',matching_level_income:'123',total_matching_level_income:'30',rio_income:'123',total_rio_income:'90',reward_income:'123',total_reward_income:'73'}} />
                 </div>
                 <div className='col-lg-5 mb-5 mt-4'>
-                  <Profit data={{netbalance:'563',withdrawal:'985'}} opt={profit}  />
+                  <Profit data={{earned:'14200.25',earned_outof:'150000'}} opt={profit}  />
                 </div>                
-            </div>
-            <div className='footer col-lg-12 bg-color'>
-                  <p className='text-center h-color p-0 my-3'>Copyright © wirenft 2022. All right reserved.</p>
-            </div>
+            </div>            
         </div>
      );
 }

@@ -1,10 +1,19 @@
 .App{    
     background-image: linear-gradient(90deg, rgb(11, 22, 149), rgb(189, 39, 197));    
     font-family: Roboto, sans-serif;
+    min-height:100vh;
+}
+.hidden-for-area{
+    visibility: hidden;
+}
+.footer-visible{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
 }
 
 .bg-color{
-    background-color: rgba(255, 255, 255, .1);
+    background-color: rgba(0, 0, 0, .2);
 }
 .h-color{
     color: white;
@@ -18,6 +27,33 @@
 .border_bottom{
     border-bottom:solid 1px white ;
 }
+.border_right{
+    border-right: 2px solid rgb(255 255 255 / 25%);
+}
 img,svg{
     vertical-align: middle;
+}
+.profile-login{
+   background-color:  rgb(40, 24, 183);
+}
+.btn-meta-mask{
+   background-color:  rgb(167, 54, 223) !important;
+}
+.bg-gray{
+ background-color: rgb(172, 172, 172);   
+}
+.profile-border{
+    border-radius: 5px;
+    border: 1px solid white;
+}
+.input{
+    width: 100%;
+    padding: 0.5rem;
+    color: white;
+    border: 2px solid rgb(255 255 255 / 25%);
+}
+.shadow-withdraw
+{
+    box-shadow: 0 0 1rem #dce1df;
+    border:0;
 }
