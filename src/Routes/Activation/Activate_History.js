@@ -15,7 +15,7 @@ const Activate_History = () => {
                 {sr:'3',package_amount:'100 USD',reamrk:'Upgrade',txn:'View txn',date:'20-05-2022'},
         ]});
     return ( 
-        <div className="row justify-content-center">
+        <div className="row justify-content-center" >
             <div className="col-md-11 py-3">
                 <PagePath data={{page_name:"Activate  History",page_path:"Activation / Activate History"}} />
                 <Table

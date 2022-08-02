@@ -2,8 +2,6 @@
     background-color: black;
     color: white;
     position: absolute;
-    padding-left: 0.3rem;
-    padding-right: 0.3rem;
     padding-top: 1rem;
     justify-content: center;
     width: fit-content;
@@ -24,9 +22,14 @@
     padding: 0.5rem 0rem;
 }
 .expand-nav > a{
+    font-size: 1.3rem;
     text-decoration: none;
     color: white;
-    padding: 0.5rem 0rem;
+    padding: 0.5rem 0.7rem;
+}
+.expand-nav > a:hover{
+    color: white;
+    background-color: rgb(172, 172, 172);
 }
 .btn1{
     color:white;
